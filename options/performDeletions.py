@@ -64,7 +64,7 @@ def automatic_deletions():
     for x in range(len(a)):
         print(a[x]),
         sleep(1)
-    print("Main tasks completed. Please remember to delete the above artefacts from the recycle bin!")
+    print(Fore.GREEN + "Main tasks completed. Please remember to delete the above artefacts from the recycle bin!" + Style.RESET_ALL)
     sys.exit(1)
 
     
@@ -84,7 +84,7 @@ def user_interaction():
             print(Fore.RED + 'Error detecting option. Did you enter a letter?' + Style.RESET_ALL)
         #Check what choice was entered and act accordingly
         if option == "Y":
-            print("continue")
+            #print("continue")
             automatic_deletions()
             break
 
@@ -103,6 +103,3 @@ def user_interaction():
         else:
             print(Fore.RED + 'Invalid option. Please enter either Y or N.' + Style.RESET_ALL)
             print("\n")
-
-
-

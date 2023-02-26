@@ -31,10 +31,14 @@ def menu_handler():
             run()
         if option == 2:
             user_interaction()
-
         elif option == 0:
             print(Fore.GREEN + Style.BRIGHT + "Thank you for using this tool!" + Style.RESET_ALL)
             quit()
-        else:
-            print(Fore.RED + 'Invalid option. Please enter a number between 0 and 3.' + Style.RESET_ALL)
+
+        elif option >= 3:
+            print(Fore.RED + 'Invalid option. Please enter a number between 0 and 2.' + Style.RESET_ALL)
             print("\n")
+
+        #else:
+            #print(Fore.RED + 'Invalid option. Please enter a number between 0 and 3.' + Style.RESET_ALL)
+            #print("\n")

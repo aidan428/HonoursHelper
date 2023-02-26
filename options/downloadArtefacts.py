@@ -63,8 +63,8 @@ def extract_forensic_artefacts():
             elif opsystem == "Linux":
                 zip_ref.extractall(mainPathLinux)
             #zip.extractall(mainPath)
-            print(Fore.GREEN + "Install Complete!" + Style.RESET_ALL)
-            print("\n")
+            print(Fore.GREEN + "Extraction Complete!" + Style.RESET_ALL)
+            #print("\n")
     except Exception as e:
         print(e)
         print(download_link)
