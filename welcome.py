@@ -50,8 +50,6 @@ def back_to_menu():
   print(Fore.YELLOW + "Simply choose an option below by typing the menu number and pressing enter." + Style.RESET_ALL)
   print("\n")
 
-def intro_music():
-  playsound('assets/welcome.mp3')
 
 def generate_welcome():
   clear_screen()

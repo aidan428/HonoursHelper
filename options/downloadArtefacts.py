@@ -25,9 +25,7 @@ def determine_os():
     return os
     
 
-def download_zip():
-    #url = r"https://repo.spaldotech.co.uk/Civ/LEKMOD_V28.zip"
-    
+def download_zip():    
     buffer_size = 1024
     response = requests.get(download_link, stream=True)
     file_size = int(response.headers.get("Content-Length", 0))
@@ -52,7 +50,7 @@ def extract_forensic_artefacts():
     opsystem = determine_os()
     print(opsystem + " detected!") 
     mainPathWindows = "C:\\Users\\" + get_username() + "\\Desktop\\"
-    mainPathLinux = "/home/" + get_username() + "\\Desktop\\"
+    mainPathLinux = "/home/" + get_username() + "/Desktop/"
 
     file_name = download_zip()
 
